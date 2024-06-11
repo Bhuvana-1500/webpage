@@ -67,17 +67,14 @@
     </dependencies>
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version> <!-- Use the latest version if possible -->
-                <configuration>
-                    <source>1.8</source> <!-- Set source version to 1.8 -->
-                    <target>1.8</target> <!-- Set target version to 1.8 -->
-                </configuration>
-            </plugin>
-        </plugins>
-        <finalName>LandingZone</finalName>
-    </build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.2</version> <!-- Use the latest version if possible -->
+        </plugin>
+    </plugins>
+    <finalName>LandingZone</finalName>
+</build>
+
 </project>
