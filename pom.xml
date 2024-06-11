@@ -73,12 +73,16 @@
     </dependencies>
     <build>
     <plugins>
-        <!-- Other plugins -->
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-            <version>3.3.2</version> <!-- Use the latest version -->
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version> <!-- Use an appropriate version -->
+            <configuration>
+                <source>7</source> <!-- Set the desired source version -->
+                <target>7</target> <!-- Set the desired target version -->
+            </configuration>
         </plugin>
     </plugins>
 </build>
+
 </project>
