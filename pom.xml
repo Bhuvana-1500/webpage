@@ -70,22 +70,15 @@
     <artifactId>maven-source-plugin</artifactId>
     <version>3.3.1</version>
 </dependency>
-
     </dependencies>
-
     <build>
     <plugins>
+        <!-- Other plugins -->
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.1</version> <!-- Use the latest version if possible -->
-            <configuration>
-                <source>11</source> <!-- Change this to 11 -->
-                <target>11</target> <!-- Change this to 11 -->
-            </configuration>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.2</version> <!-- Use the latest version -->
         </plugin>
     </plugins>
 </build>
-
-
 </project>
